@@ -350,8 +350,8 @@ module.controller('ctrl', ctrl);
 
   - `{{[2,1,4,3] | orderBy}}` 升序
   - `{{[2,1,4,3 | orderBy:'-']}}` 降序
-  - `{{[{id:2,price:3}, {id:1, price:4}] | orderBy:'id'}}` id升序
-  - `{{[{id:2,price:3}, {id:1, price:4}] | orderBy:'-price'}}` price降序
+  - `{{[{id:2,price:3}, {id:1, price:4} | orderBy:'id']}}` id升序
+  - `{{[{id:2,price:3}, {id:1, price:4} | orderBy:'-price']}}` price降序
   - `orderBy:['id','price']` 如果id相同，则按照price进行排序
 
 - `filter` 从数组中匹配过滤返回一个新数组
